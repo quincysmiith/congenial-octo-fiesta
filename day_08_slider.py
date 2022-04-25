@@ -9,7 +9,7 @@ st.header("st.slider")
 
 st.subheader("Single value slider")
 
-st.code('''age = st.slider("How old are you", 0, 100, 50)''')
+st.code("""age = st.slider("How old are you", 0, 100, 50)""")
 
 age = st.slider("How old are you", 0, 100, 50)
 
@@ -26,7 +26,7 @@ st.markdown("---")
 
 st.subheader("Range slider")
 
-st.code('''my_range = st.slider("choose a range", 0.0, 100.0, (10.0, 75.0))''')
+st.code("""my_range = st.slider("choose a range", 0.0, 100.0, (10.0, 75.0))""")
 
 my_range = st.slider("choose a range", 0.0, 100.0, (10.0, 75.0))
 
@@ -42,16 +42,15 @@ st.markdown("---")
 
 st.subheader("Time slider")
 
-st.code('''appointment = st.slider("Pick a time", value=(time(7, 30), time(12, 45)))''')
+st.code("""appointment = st.slider("Pick a time", value=(time(7, 30), time(12, 45)))""")
 
 appointment = st.slider("Pick a time", value=(time(7, 30), time(12, 45)))
 
 st.write(appointment)
-st.write(f'Start time: {appointment[0]}')
-st.write(f'End time: {appointment[1]}')
+st.write(f"Start time: {appointment[0]}")
+st.write(f"End time: {appointment[1]}")
 
 st.markdown("---")
-
 
 
 # -------------------------------------
@@ -60,12 +59,14 @@ st.markdown("---")
 
 st.subheader("Date slider")
 
-st.code('''my_datetime = st.slider("Pick a date", value=datetime(2022, 4, 11), format = "YYYY-MM-DD")''')
+st.code(
+    """my_datetime = st.slider("Pick a date", value=datetime(2022, 4, 11), format = "YYYY-MM-DD")"""
+)
 
-#my_datetime = st.slider("Pick a date", value=datetime(2022, 4, 11, 12, 30 ), format = "MM/DD/YY - hh:mm")
+# my_datetime = st.slider("Pick a date", value=datetime(2022, 4, 11, 12, 30 ), format = "MM/DD/YY - hh:mm")
 
-my_datetime = st.slider("Pick a date", value=datetime(2022, 4, 11), format = "YYYY-MM-DD")
+my_datetime = st.slider("Pick a date", value=datetime(2022, 4, 11), format="YYYY-MM-DD")
 
 st.write(my_datetime)
 
-st.write(f'Date picked: {my_datetime.date()}')
+st.write(f"Date picked: {my_datetime.date()}")
