@@ -7,7 +7,7 @@ st.title("File Uploader")
 
 st.write("## Input CSV")
 
-a_file = st.file_uploader("Choose a file", type = ["csv"])
+a_file = st.file_uploader("Choose a file", type=["csv"])
 
 if a_file is not None:
     data = pd.read_csv(a_file)

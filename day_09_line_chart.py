@@ -4,20 +4,18 @@ import numpy as np
 
 st.header("st.line_chart")
 
-line_chart_code_string = '''
+line_chart_code_string = """
 chart_data = pd.DataFrame(
      np.random.randn(20, 3),
      columns=['a', 'b', 'c'])
 
 
 st.line_chart(chart_data)
-'''
+"""
 
 st.code(line_chart_code_string)
 
-chart_data = pd.DataFrame(
-     np.random.randn(20, 3),
-     columns=['a', 'b', 'c'])
+chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 
 
 st.line_chart(chart_data)
